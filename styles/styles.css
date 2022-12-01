@@ -13,6 +13,7 @@ body {
 .Header {
   display: flex;
   margin-top: 17px;
+  margin-bottom: 70px;
   justify-content: space-between;
   align-items: center;
 }
@@ -23,14 +24,12 @@ body {
 
 .NavList {
   display: flex;
+  gap: 20px;
 }
 
 .NavList_item {
   line-height: 1.75;
   cursor: pointer;
-}
-.NavList_item:not(:first-child) {
-  margin-left: 20px;
 }
 .NavList_item:hover:not(:first-child) {
   text-decoration: underline;
@@ -47,6 +46,8 @@ body {
 
 .Button {
   color: #ffffff;
+  font-weight: 600;
+  line-height: 1.25;
   background-color: #ff9900;
   border-radius: 4px;
   padding: 13px 25px;
@@ -55,4 +56,43 @@ body {
   color: #2f281e;
   background-color: #ffffff;
   border: 1px solid #bcd0e5;
+}
+.Button_large {
+  padding: 13px 40px;
+  max-width: 180px;
+}
+
+.Section {
+  display: flex;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Title {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+.Title .Heading {
+  margin-bottom: 30px;
+}
+.Title .Paragraph {
+  margin-bottom: 20px;
+}
+
+.Image {
+  max-width: 54%;
+}
+
+.Heading {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+.Paragraph {
+  color: #544837;
+  font-size: 18px;
+  line-height: 1.55;
 }/*# sourceMappingURL=styles.css.map */

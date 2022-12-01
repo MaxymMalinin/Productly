@@ -15,6 +15,7 @@ body {
 .Header {
   display: flex;
   margin-top: 17px;
+  margin-bottom: 70px;
   justify-content: space-between;
   align-items: center;
 }
@@ -25,15 +26,12 @@ body {
 
 .NavList {
   display: flex;
+  gap: 20px;
 }
 
 .NavList_item {
   line-height: 1.75;
   cursor: pointer;
-
-  &:not(:first-child) {
-    margin-left: 20px;
-  }
 
   &:hover:not(:first-child) {
     text-decoration: underline;
@@ -51,6 +49,8 @@ body {
 
 .Button {
   color: $color-white;
+  font-weight: 600;
+  line-height: 1.25;
   background-color: $color-primary;
   border-radius: 4px;
   padding: 13px 25px;
@@ -60,4 +60,46 @@ body {
     background-color: $color-white;
     border: 1px solid $color-border;
   }
+
+  &_large {
+    padding: 13px 40px;
+    max-width: 180px;
+  }
+}
+
+.Section {
+  display: flex;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Title {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+
+  & .Heading {
+    margin-bottom: 30px;
+  }
+
+  & .Paragraph {
+    margin-bottom: 20px;
+  }
+}
+
+.Image {
+  max-width: 54%;
+}
+
+.Heading {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+.Paragraph {
+  color: $color-text-light;
+  font-size: 18px;
+  line-height: 1.55;
 }
