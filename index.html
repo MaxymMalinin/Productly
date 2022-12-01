@@ -11,16 +11,22 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
   <body>
     <header class="Header Center">
-      <a href="./"><img class="Logo" src="./img/Logo.svg" alt="Logo" /></a>
+      <div>
+        <a href="./"><img class="Image" src="./img/logo.svg" alt="Logo" /></a>
+      </div>
 
       <nav>
         <ul class="NavList">
-          <li class="NavList_item CurrentPage">Product</li>
+          <li class="NavList_item NavList_item-selected">Product</li>
           <li class="NavList_item">Customers</li>
           <li class="NavList_item">Pricing</li>
           <li class="NavList_item">Resources</li>
@@ -28,23 +34,77 @@
       </nav>
 
       <div class="Buttons">
-        <button class="Button Button_alt">Sign In</button>
+        <button class="Button Button-alt">Sign In</button>
         <button class="Button">Sign Up</button>
       </div>
     </header>
 
     <main>
       <section class="Section Center">
-        <div class="Title">
+        <div class="Content">
           <h1 class="Heading">The Design Thinking superpowers</h1>
-          <p class="Paragraph">
+
+          <p class="Paragraph Paragraph-alt">
             Tools, tutorials, design and innovation experts, all in one place!
             The most intuitive way to imagine your next user experience.
           </p>
-          <button class="Button Button_large">Get started</button>
+
+          <div>
+            <button class="Button Button-large">Get started</button>
+          </div>
         </div>
-        <img class="Image" src="./img/HappyPeople.svg" alt="Happy People" />
+        <div>
+          <img class="Image" src="./img/happyPeople.svg" alt="Happy People" />
+        </div>
       </section>
+
+      <section class="SectionAlt AltBg">
+        <div class="Center">
+          <h2 class="Heading Heading-m SectionAlt_heading">
+            We design tools to unveil your superpowers
+          </h2>
+
+          <div class="Tools">
+            <div class="Tool">
+              <img class="Tool_image" src="./img/mouse.svg" alt="Cursor" />
+              <h3 class="Heading Heading-s Tool_heading">First click tests</h3>
+              <p class="Paragraph">While most people enjoy casino gambling,</p>
+            </div>
+
+            <div class="Tool">
+              <img class="Tool_image" src="./img/snake.svg" alt="Snake" />
+              <h3 class="Heading Heading-s Tool_heading">Design surveys</h3>
+              <p class="Paragraph">
+                Sports betting, lottery and bingo playing for the fun
+              </p>
+            </div>
+
+            <div class="Tool">
+              <img class="Tool_image" src="./img/love.svg" alt="Heart" />
+              <h3 class="Heading Heading-s Tool_heading">Preference tests</h3>
+              <p class="Paragraph">The Myspace page defines the individual.</p>
+            </div>
+
+            <div class="Tool">
+              <img class="Tool_image" src="./img/time.svg" alt="Sand Clock" />
+              <h3 class="Heading Heading-s Tool_heading">Five second tests</h3>
+              <p class="Paragraph">
+                Personal choices and the overall personality of the person.
+              </p>
+            </div>
+          </div>
+
+          <div class="SectionAlt_actions">
+            <button class="Button Button-large">Sign up Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="Section Center"></section>
+
+      <section class="Section Center"></section>
+
+      <section class="Section Center"></section>
     </main>
   </body>
 </html>
