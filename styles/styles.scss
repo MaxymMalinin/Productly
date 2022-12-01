@@ -1,1 +1,63 @@
 @import "./variables.scss";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: $color-white;
+  color: $color-text;
+}
+
+.Center {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+
+.Header {
+  display: flex;
+  margin-top: 17px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  width: 100%;
+}
+
+.NavList {
+  display: flex;
+}
+
+.NavList_item {
+  line-height: 1.75;
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  &:hover:not(:first-child) {
+    text-decoration: underline;
+  }
+}
+
+.CurrentPage {
+  color: $color-primary;
+}
+
+.Buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.Button {
+  color: $color-white;
+  background-color: $color-primary;
+  border-radius: 4px;
+  padding: 13px 25px;
+
+  &_alt {
+    color: $color-text;
+    background-color: $color-white;
+    border: 1px solid $color-border;
+  }
+}

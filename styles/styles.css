@@ -1,1 +1,58 @@
-/*# sourceMappingURL=styles.css.map */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  color: #2f281e;
+}
+
+.Center {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+
+.Header {
+  display: flex;
+  margin-top: 17px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  width: 100%;
+}
+
+.NavList {
+  display: flex;
+}
+
+.NavList_item {
+  line-height: 1.75;
+  cursor: pointer;
+}
+.NavList_item:not(:first-child) {
+  margin-left: 20px;
+}
+.NavList_item:hover:not(:first-child) {
+  text-decoration: underline;
+}
+
+.CurrentPage {
+  color: #ff9900;
+}
+
+.Buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.Button {
+  color: #ffffff;
+  background-color: #ff9900;
+  border-radius: 4px;
+  padding: 13px 25px;
+}
+.Button_alt {
+  color: #2f281e;
+  background-color: #ffffff;
+  border: 1px solid #bcd0e5;
+}/*# sourceMappingURL=styles.css.map */
